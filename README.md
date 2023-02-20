@@ -40,4 +40,4 @@ root 권한으로 crontab -e 등록을 수행합니다.
 
 ### **step 4**  
 크론 재시작  
-`service cron restart`  
+`systemctl restart cron.service`  
