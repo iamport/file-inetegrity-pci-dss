@@ -12,7 +12,10 @@ Usage: [-a|d] [files..]
 `./file-integrity.sh -d /etc/my.cnf`   
 `./file-integrity.sh -d "/etc/my.cnf /etc/passwd"`  
 
-`slack_webhook`변수에 alert을 받을 slack 채널의 Webhook URL을 지정해야 합니다.
+따로 실행 옵션을 선언하지 않고, 스크립트 파일에서 직접 `file_list`변수에 무결성을 점검할 파일을 명시할 수 있습니다.  
+
+### Slack Webhook 설정
+스크립트 파일에서 `slack_webhook`변수에 alert을 받을 slack 채널의 Webhook URL을 지정해야 합니다.  
 
 # 배포방법  
 ### **step 1**  
