@@ -10,7 +10,7 @@ set -x
 export PS4='Line $LINENO: '
 exec 2> /var/log/integrity_log/log-$log_date
 #########################GLOBAL VARIABLE#####################################################################################
-file_list=("/etc/passwd" "/etc/hosts" "/etc/group")
+file_list=("/etc/passwd" "/etc/hosts" "/etc/group" "/etc/chrony.conf")
 append_list=("") #add & delete conf.file
 homedir="$HOME/checksum/"
 mactime_dir="mactime/"
